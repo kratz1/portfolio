@@ -81,9 +81,6 @@
             text-align: center;
             color: white;
             position: relative;
-            background:
-                linear-gradient(135deg, #0F2027, #203A43, #2C5364),
-                url("images/Developpement-web-Agence-Web-Net-Concept-1920x1055.png");
             background-blend-mode: multiply;
         }
 
@@ -95,6 +92,9 @@
             right: 0;
             bottom: 0;
             z-index: -1;
+            background:
+                linear-gradient(135deg, #0F2027, #203A43, #2C5364),
+                url("images/Developpement-web-Agence-Web-Net-Concept-1920x1055.png");
         }
 
         .hero-content h1 {
@@ -719,5 +719,6 @@
             }
 
         }
+
 
 
