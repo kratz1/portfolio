@@ -81,6 +81,10 @@
             text-align: center;
             color: white;
             position: relative;
+                    background:
+                linear-gradient(135deg, #0F2027, #203A43, #2C5364),
+                url("/images/Developpement-web-Agence-Web-Net-Concept-1920x1055.png");
+            background-blend-mode: multiply;
         }
 
         .hero::before {
@@ -90,11 +94,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-            /*background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff10" points="0,0 1000,300 1000,1000 0,700"/></svg>');*/
-            background:
-                linear-gradient(135deg, #0F2027, #203A43, #2C5364),
-                url("/images/Developpement-web-Agence-Web-Net-Concept-1920x1055.png");
-            background-blend-mode: multiply; /* ou multiply, soft-light, etc. */
             z-index: -1;
         }
 
@@ -718,4 +717,5 @@
             .contact-text a {
                 font-size: 1rem;
             }
+
         }
