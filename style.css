@@ -83,7 +83,7 @@
             position: relative;
             background:
                 linear-gradient(135deg, #0F2027, #203A43, #2C5364),
-                url("/images/Developpement-web-Agence-Web-Net-Concept-1920x1055.png");
+                url("images/Developpement-web-Agence-Web-Net-Concept-1920x1055.png");
             background-blend-mode: multiply;
         }
 
@@ -719,4 +719,5 @@
             }
 
         }
+
 
