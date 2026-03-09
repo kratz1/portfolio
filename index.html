@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Kratz Raphaël</div>
+            <ul class="nav-links">
+                <li><a href="#accueil" data-key="nav_home">Accueil</a></li>
+                <li><a href="#a-propos" data-key="nav_about">À propos</a></li>
+                <li><a href="#formations" data-key="nav_education">Formations</a></li>
+                <li><a href="#experiences" data-key="nav_experience">Expériences</a></li>
+                <li><a href="#competences" data-key="nav_skills">Compétences</a></li>
+                <li><a href="#portfolio" data-key="nav_portfolio">Portfolio</a></li>
+                <li><a href="#hobbies" data-key="nav_hobbies">Hobbies</a></li>
+                <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">
+                <span class="flag">🇬🇧</span>
+                <span class="lang-label">EN</span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 data-key="hero_title">Développeur Web Full Stack</h1>
+            <p data-key="hero_subtitle">Passionné par la création d'expériences web innovantes et intuitives</p>
+            <a href="#portfolio" class="cta-button" data-key="hero_cta">Voir mon travail</a>
+        </div>
+    </section>
+
+    <section id="a-propos" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="about_title">À propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-key="about_p1">Je suis un développeur web junior passionné par la création d'applications modernes, performantes et esthétiques. Mon intérêt ne se limite pas au développement web : je m'intéresse également au web design et aux arts graphiques, domaines qui nourrissent ma créativité et ma vision globale des projets numériques.</p>
+                    <br/>
+                    <p data-key="about_p2">Grâce à une formation solide et à des expériences variées, j'ai acquis une maîtrise des technologies front-end et back-end, ainsi qu'une approche orientée utilisateur. Autonome de nature, je sais aussi bien travailler seul qu'en équipe, en adaptant ma méthode de travail aux besoins du projet.</p>
+                    <br/>
+                    <p data-key="about_p3">Anciennement chargé de projet web chez Solocal Marketing Services, je combine compétences techniques et sens stratégique pour concevoir et livrer des solutions web de qualité.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/profil.jpeg" alt="Raphaël Kratz" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formations" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="edu_title">Formations</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-title" data-key="edu1_title">Licence Professionnelle</div>
+                        <p data-key="edu1_desc">Développement web et conception d'interface</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-title" data-key="edu2_title">DUT Métiers du Multimédia et d'Internet</div>
+                        <p data-key="edu2_desc">Formation complète en développement web, design et communication digitale</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2020</div>
+                        <div class="timeline-title" data-key="edu3_title">L1 Économie Gestion</div>
+                        <p data-key="edu3_desc">Première année d'études supérieures en économie et gestion</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <div class="timeline-title" data-key="edu4_title">Baccalauréat ES</div>
+                        <p data-key="edu4_desc">Mention Bien - Économique et Social</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="exp_title">Expériences Professionnelles</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mai 2024 - Août 2025</div>
+                        <div class="timeline-title" data-key="exp1_title">Chargé de Projet Web</div>
+                        <p data-key="exp1_desc"><strong>Solocal Marketing Services</strong><br>
+                        Gestion de projets web, suivi client et optimisation du référencement.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-title" data-key="exp2_title">Alternance - Développeur Web Full Stack</div>
+                        <p data-key="exp2_desc"><strong>Bee Automation</strong><br>
+                        Développement d'interface web complètes, maintenance et évolution de systèmes existants.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-title" data-key="exp3_title">Stage - Développeur Web Full Stack</div>
+                        <p data-key="exp3_desc"><strong>Bee Automation</strong><br>
+                        Stage de fin de DUT (3 mois) - Développement front-end et back-end, intégration d'APIs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="skills_title">Compétences</h2>
+            <div class="skills-categories">
+                <div class="skill-category-card dev-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3 data-key="skills_dev">Développement Web</h3>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_languages">Langages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_frameworks">Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Symfony</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Tailwind</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h4>CMS</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">WordPress</span>
+                            <span class="skill-tag">Drupal</span>
+                            <span class="skill-tag">Duda</span>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_software">Logiciels</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Visual Studio Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card design-category">
+                    <div class="category-header">
+                        <div class="category-icon">🎨</div>
+                        <h3 data-key="skills_design">Design & Graphisme</h3>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_software">Logiciels</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe Illustrator</span>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_competences">Compétences</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-key="tag_mockups">Maquettes web</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag" data-key="tag_proto">Prototypage</span>
+                            <span class="skill-tag" data-key="tag_logos">Création de logos</span>
+                            <span class="skill-tag" data-key="tag_brand">Chartes graphiques</span>
+                            <span class="skill-tag" data-key="tag_infog">Infographies</span>
+                            <span class="skill-tag" data-key="tag_responsive">Design responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card seo-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔍</div>
+                        <h3 data-key="skills_seo">SEO & Marketing Digital</h3>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_seo_tech">SEO Technique</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-key="tag_audit">Audit SEO technique</span>
+                            <span class="skill-tag" data-key="tag_onpage">Optimisation on-page</span>
+                            <span class="skill-tag" data-key="tag_keywords">Recherche de mots-clés</span>
+                            <span class="skill-tag" data-key="tag_speed">Optimisation de la vitesse</span>
+                            <span class="skill-tag" data-key="tag_rank">Suivi de positionnement</span>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_analytics">Analyse & Stratégie</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Google Analytics</span>
+                            <span class="skill-tag">Search Console</span>
+                            <span class="skill-tag" data-key="tag_local">SEO local</span>
+                            <span class="skill-tag" data-key="tag_competition">Analyse de la concurrence</span>
+                        </div>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_content">Contenu</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-key="tag_editorial">Stratégie éditoriale</span>
+                            <span class="skill-tag" data-key="tag_seowrite">Rédaction SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card office-category">
+                    <div class="category-header">
+                        <div class="category-icon">📄</div>
+                        <h3 data-key="skills_office">Bureautique</h3>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_office_tools">Outils Microsoft Office</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-key="tag_word">Microsoft Word : avancé</span>
+                            <span class="skill-tag" data-key="tag_excel">Microsoft Excel : intermédiaire</span>
+                            <span class="skill-tag" data-key="tag_ppt">Microsoft PowerPoint : avancé</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card other-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌐</div>
+                        <h3 data-key="skills_languages_other">Langues & Autres</h3>
+                    </div>
+                    <div class="category-section">
+                        <h4 data-key="skills_lang_section">Langues</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-key="tag_fr">Français (Langue maternelle)</span>
+                            <span class="skill-tag" data-key="tag_en">Anglais (C1)</span>
+                            <span class="skill-tag" data-key="tag_de">Allemand (B2)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="portfolio_title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><img src="images/Huitres.png"/></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Les Huîtres de Fanny et Charles</h3>
+                        <p class="portfolio-description" data-key="proj1_desc">Site de présentation pour un producteur ostréicole</p>
+                        <a href="https://www.leshuitresdefannyetcharles.fr" target="_blank" class="portfolio-link" data-key="see_site">Voir le site →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><img src="images/Ruvoen.png"/></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Ruvoën Distribution</h3>
+                        <p class="portfolio-description" data-key="proj2_desc">Site vitrine professionnel pour une entreprise d'équipements TV</p>
+                        <a href="https://www.ruvoendistribution.com" target="_blank" class="portfolio-link" data-key="see_site">Voir le site →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><img src="images/Chris taxi.png"/></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Chris Taxi Guipavas</h3>
+                        <p class="portfolio-description" data-key="proj3_desc">Site web pour des services de taxi en Bretagne</p>
+                        <a href="https://www.christaxiguipavas.fr" target="_blank" class="portfolio-link" data-key="see_site">Voir le site →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><img src="images/Loire hygiene.png"/></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Loire Hygiène</h3>
+                        <p class="portfolio-description" data-key="proj4_desc">Site professionnel pour une entreprise de nettoyage et hygiène</p>
+                        <a href="https://www.loirehygiene.fr" target="_blank" class="portfolio-link" data-key="see_site">Voir le site →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><img src="images/Bien etre.png"/></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Angélina Meheust</h3>
+                        <p class="portfolio-description" data-key="proj5_desc">Site vitrine pour une praticienne en soins bien-être</p>
+                        <a href="https://www.angelina-meheust.fr" target="_blank" class="portfolio-link" data-key="see_site">Voir le site →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><img src="images/Povo Creation.png"/></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">PoVo Création</h3>
+                        <p class="portfolio-description" data-key="proj6_desc">Site web d'une mercerie dans la région de Porto-Vecchio</p>
+                        <a href="https://www.povo-creation.fr" target="_blank" class="portfolio-link" data-key="see_site">Voir le site →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="portfolio.html" class="portfolio-button" data-key="portfolio_full">Voir le portfolio complet →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="hobbies_title">Hobbies & Centres d'intérêt</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎹</div>
+                    <h3 data-key="hobby1_title">Piano</h3>
+                    <p data-key="hobby1_desc">Pratique depuis mes 10 ans, passion pour la musique classique et contemporaine</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🥾</div>
+                    <h3 data-key="hobby2_title">Randonnée</h3>
+                    <p data-key="hobby2_desc">Amateur de grands espaces, j'ai réalisé le tour du Mont-Blanc en bivouac en 2023</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🌍</div>
+                    <h3 data-key="hobby3_title">Géographie</h3>
+                    <p data-key="hobby3_desc">Passionné de culture générale géographique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-key="contact_title">Contact</h2>
+            <div class="contact-info">
+                <p class="contact-intro" data-key="contact_intro">N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de collaboration.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:kratz.raphael@gmail.com">kratz.raphael@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h3 data-key="contact_phone">Téléphone</h3>
+                            <a href="tel:+33695919111">+33 6 95 91 91 11</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-key="footer_text">&copy; 2025 Raphaël Kratz. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="translation-banner" id="translationBanner"></div>
+
+    <script>
+        const translations = {
+            fr: {
+                nav_home: "Accueil", nav_about: "À propos", nav_education: "Formations",
+                nav_experience: "Expériences", nav_skills: "Compétences", nav_portfolio: "Portfolio",
+                nav_hobbies: "Hobbies", nav_contact: "Contact",
+                hero_title: "Développeur Web Full Stack",
+                hero_subtitle: "Passionné par la création d'expériences web innovantes et intuitives",
+                hero_cta: "Voir mon travail",
+                about_title: "À propos",
+                about_p1: "Je suis un développeur web junior passionné par la création d'applications modernes, performantes et esthétiques. Mon intérêt ne se limite pas au développement web : je m'intéresse également au web design et aux arts graphiques, domaines qui nourrissent ma créativité et ma vision globale des projets numériques.",
+                about_p2: "Grâce à une formation solide et à des expériences variées, j'ai acquis une maîtrise des technologies front-end et back-end, ainsi qu'une approche orientée utilisateur. Autonome de nature, je sais aussi bien travailler seul qu'en équipe, en adaptant ma méthode de travail aux besoins du projet.",
+                about_p3: "Anciennement chargé de projet web chez Solocal Marketing Services, je combine compétences techniques et sens stratégique pour concevoir et livrer des solutions web de qualité.",
+                edu_title: "Formations",
+                edu1_title: "Licence Professionnelle", edu1_desc: "Développement web et conception d'interface",
+                edu2_title: "DUT Métiers du Multimédia et d'Internet", edu2_desc: "Formation complète en développement web, design et communication digitale",
+                edu3_title: "L1 Économie Gestion", edu3_desc: "Première année d'études supérieures en économie et gestion",
+                edu4_title: "Baccalauréat ES", edu4_desc: "Mention Bien - Économique et Social",
+                exp_title: "Expériences Professionnelles",
+                exp1_title: "Chargé de Projet Web",
+                exp1_desc: "<strong>Solocal Marketing Services</strong><br>Gestion de projets web, suivi client et optimisation du référencement.",
+                exp2_title: "Alternance - Développeur Web Full Stack",
+                exp2_desc: "<strong>Bee Automation</strong><br>Développement d'interface web complètes, maintenance et évolution de systèmes existants.",
+                exp3_title: "Stage - Développeur Web Full Stack",
+                exp3_desc: "<strong>Bee Automation</strong><br>Stage de fin de DUT (3 mois) - Développement front-end et back-end, intégration d'APIs.",
+                skills_title: "Compétences", skills_dev: "Développement Web", skills_languages: "Langages",
+                skills_frameworks: "Frameworks", skills_software: "Logiciels", skills_design: "Design & Graphisme",
+                skills_competences: "Compétences", skills_seo: "SEO & Marketing Digital",
+                skills_seo_tech: "SEO Technique", skills_analytics: "Analyse & Stratégie",
+                skills_content: "Contenu",
+                skills_office: "Bureautique",
+                skills_office_tools: "Outils Microsoft Office",
+                tag_word: "Microsoft Word : avancé",
+                tag_excel: "Microsoft Excel : intermédiaire",
+                tag_ppt: "Microsoft PowerPoint : avancé",
+                skills_languages_other: "Langues & Autres", skills_lang_section: "Langues",
+                tag_mockups: "Maquettes web", tag_proto: "Prototypage", tag_logos: "Création de logos",
+                tag_brand: "Chartes graphiques", tag_infog: "Infographies", tag_responsive: "Design responsive",
+                tag_audit: "Audit SEO technique", tag_onpage: "Optimisation on-page",
+                tag_keywords: "Recherche de mots-clés", tag_speed: "Optimisation de la vitesse",
+                tag_rank: "Suivi de positionnement", tag_local: "SEO local",
+                tag_competition: "Analyse de la concurrence", tag_editorial: "Stratégie éditoriale",
+                tag_seowrite: "Rédaction SEO", tag_fr: "Français (Langue maternelle)",
+                tag_en: "Anglais (C1)", tag_de: "Allemand (B2)",
+                portfolio_title: "Portfolio", see_site: "Voir le site →",
+                proj1_desc: "Site de présentation pour un producteur ostréicole",
+                proj2_desc: "Site vitrine professionnel pour une entreprise d'équipements TV",
+                proj3_desc: "Site web pour des services de taxi en Bretagne",
+                proj4_desc: "Site professionnel pour une entreprise de nettoyage et hygiène",
+                proj5_desc: "Site vitrine pour une praticienne en soins bien-être",
+                proj6_desc: "Site web d'une mercerie dans la région de Porto-Vecchio",
+                portfolio_full: "Voir le portfolio complet →",
+                hobbies_title: "Hobbies & Centres d'intérêt",
+                hobby1_title: "Piano", hobby1_desc: "Pratique depuis mes 10 ans, passion pour la musique classique et contemporaine",
+                hobby2_title: "Randonnée", hobby2_desc: "Amateur de grands espaces, j'ai réalisé le tour du Mont-Blanc en bivouac en 2023",
+                hobby3_title: "Géographie", hobby3_desc: "Passionné de culture générale géographique",
+                contact_title: "Contact",
+                contact_intro: "N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de collaboration.",
+                contact_phone: "Téléphone",
+                footer_text: "© 2025 Raphaël Kratz. Tous droits réservés.",
+                page_title: "Portfolio - Développeur Web"
+            },
+            en: {
+                nav_home: "Home", nav_about: "About", nav_education: "Education",
+                nav_experience: "Experience", nav_skills: "Skills", nav_portfolio: "Portfolio",
+                nav_hobbies: "Hobbies", nav_contact: "Contact",
+                hero_title: "Full Stack Web Developer",
+                hero_subtitle: "Passionate about creating innovative and intuitive web experiences",
+                hero_cta: "View my work",
+                about_title: "About",
+                about_p1: "I am a junior web developer passionate about building modern, high-performance and visually appealing applications. My interest extends beyond web development: I am also drawn to web design and graphic arts, fields that fuel my creativity and broaden my vision of digital projects.",
+                about_p2: "Through solid education and diverse experience, I have developed strong skills in both front-end and back-end technologies, with a user-centred approach. I am naturally independent and equally comfortable working alone or within a team, adapting my work style to the needs of each project.",
+                about_p3: "As a former web project manager at Solocal Marketing Services, I blend technical skills with strategic thinking to design and deliver high-quality web solutions.",
+                edu_title: "Education",
+                edu1_title: "Professional Bachelor's Degree", edu1_desc: "Web development and interface design",
+                edu2_title: "DUT Multimedia & Internet", edu2_desc: "Comprehensive training in web development, design and digital communication",
+                edu3_title: "First Year – Economics & Management", edu3_desc: "First year of higher education in economics and management",
+                edu4_title: "French Baccalauréat ES", edu4_desc: "With Honours – Economics & Social Sciences",
+                exp_title: "Professional Experience",
+                exp1_title: "Web Project Manager",
+                exp1_desc: "<strong>Solocal Marketing Services</strong><br>Web project management, client follow-up and SEO optimisation.",
+                exp2_title: "Apprenticeship – Full Stack Web Developer",
+                exp2_desc: "<strong>Bee Automation</strong><br>Development of complete web interfaces, maintenance and evolution of existing systems.",
+                exp3_title: "Internship – Full Stack Web Developer",
+                exp3_desc: "<strong>Bee Automation</strong><br>End-of-degree internship (3 months) – Front-end and back-end development, API integration.",
+                skills_title: "Skills", skills_dev: "Web Development", skills_languages: "Languages",
+                skills_frameworks: "Frameworks", skills_software: "Software", skills_design: "Design & Graphics",
+                skills_competences: "Skills", skills_seo: "SEO & Digital Marketing",
+                skills_seo_tech: "Technical SEO", skills_analytics: "Analytics & Strategy",
+                skills_content: "Content",
+                skills_office: "Office Tools",
+                skills_office_tools: "Microsoft Office Suite",
+                tag_word: "Microsoft Word: Advanced",
+                tag_excel: "Microsoft Excel: Intermediate",
+                tag_ppt: "Microsoft PowerPoint: Advanced",
+                skills_languages_other: "Languages & Other", skills_lang_section: "Languages",
+                tag_mockups: "Web mockups", tag_proto: "Prototyping", tag_logos: "Logo creation",
+                tag_brand: "Brand guidelines", tag_infog: "Infographics", tag_responsive: "Responsive design",
+                tag_audit: "Technical SEO audit", tag_onpage: "On-page optimisation",
+                tag_keywords: "Keyword research", tag_speed: "Speed optimisation",
+                tag_rank: "Ranking tracking", tag_local: "Local SEO",
+                tag_competition: "Competitive analysis", tag_editorial: "Editorial strategy",
+                tag_seowrite: "SEO copywriting", tag_fr: "French (Native)",
+                tag_en: "English (C1)", tag_de: "German (B2)",
+                portfolio_title: "Portfolio", see_site: "View site →",
+                proj1_desc: "Presentation website for an oyster producer",
+                proj2_desc: "Professional showcase website for a TV equipment company",
+                proj3_desc: "Website for taxi services in Brittany",
+                proj4_desc: "Professional website for a cleaning and hygiene company",
+                proj5_desc: "Showcase website for a wellness therapist",
+                proj6_desc: "Website for a haberdashery in the Porto-Vecchio region",
+                portfolio_full: "View full portfolio →",
+                hobbies_title: "Hobbies & Interests",
+                hobby1_title: "Piano", hobby1_desc: "Playing since the age of 10, passionate about classical and contemporary music",
+                hobby2_title: "Hiking", hobby2_desc: "A lover of wide open spaces, I completed the Mont-Blanc circuit in 2023 with bivouac camping",
+                hobby3_title: "Geography", hobby3_desc: "Passionate about geographical general knowledge",
+                contact_title: "Contact",
+                contact_intro: "Feel free to reach out to discuss your projects or collaboration opportunities.",
+                contact_phone: "Phone",
+                footer_text: "© 2025 Raphaël Kratz. All rights reserved.",
+                page_title: "Portfolio - Web Developer"
+            }
+        };
+
+        // ─── STATE ───────────────────────────────────────────────────────
+        let currentLang = 'fr';
+
+        // ─── APPLY TRANSLATIONS ──────────────────────────────────────────
+        function applyTranslations(lang) {
+            const t = translations[lang];
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (t[key] !== undefined) {
+                    el.innerHTML = t[key];
+                }
+            });
+            document.title = t.page_title;
+            document.documentElement.lang = lang;
+        }
+
+        // ─── TOGGLE ──────────────────────────────────────────────────────
+        function toggleLanguage() {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            applyTranslations(currentLang);
+
+            const btn = document.getElementById('langToggle');
+            if (currentLang === 'en') {
+                btn.innerHTML = '<span class="flag">🇫🇷</span><span class="lang-label">FR</span>';
+            } else {
+                btn.innerHTML = '<span class="flag">🇬🇧</span><span class="lang-label">EN</span>';
+            }
+
+            // Show banner
+            const banner = document.getElementById('translationBanner');
+            banner.textContent = currentLang === 'en' ? '🌐 Page translated to English' : '🌐 Page traduite en français';
+            banner.classList.add('show');
+            setTimeout(() => banner.classList.remove('show'), 2500);
+        }
+
+        // ─── SMOOTH SCROLL ───────────────────────────────────────────────
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ─── HEADER SCROLL EFFECT ────────────────────────────────────────
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // ─── ANIMATE ON SCROLL ───────────────────────────────────────────
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item, .skill-category, .hobby-card, .portfolio-item').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
