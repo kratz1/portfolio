@@ -356,6 +356,15 @@
             background: linear-gradient(135deg, #4facfe, #00f2fe);
         }
 
+        .office-category {
+            border-top-color: #fa8231;
+        
+        }
+        
+        .office-category .category-icon {
+            background: linear-gradient(135deg, #fa8231, #f7b731);
+        }
+
         .other-category {
             border-top-color: #43e97b;
         }
@@ -440,6 +449,10 @@
 
         .seo-category .skill-tag:hover {
             background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .office-category .skill-tag:hover {
+            background: linear-gradient(135deg, #fa8231, #f7b731);
         }
 
         .other-category .skill-tag:hover {
